@@ -1,0 +1,50 @@
+{
+  "general": {
+    "check_interval": "<check after every__seconds>",
+    "log_level": "INFO",
+    "language": "en"
+  },
+
+  "monitors": {
+    "cpu_ram": {
+      "enabled": true,
+      "cpu": {},
+      "ram": {}
+    },
+
+    "disk_space": {
+      "enabled": true,
+      "threshold_percent": 80,
+      "severity": "HIGH"
+    },
+
+    "mem_usage": {
+      "enabled": true,
+      "threshold_percent": 80,
+      "severity": "MEDIUM"
+    },
+
+    "pending_updates": {
+      "enabled": true,
+      "severity": "LOW"
+    },
+
+    "temp_files": {
+      "enabled": true,
+      "paths" : [],
+      "size_threshold_mb": 1000,
+      "exclude_patterns": [],
+      "severity": "LOW"
+    },
+
+    "uptime": {
+      "enabled": true,
+      "threshold_days": 10,
+      "severity": "MEDIUM"
+    }
+  },
+
+  "notifications": {},
+
+  "report_log_config": {}
+}
